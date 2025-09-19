@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  mcp-server:
+    # Use 'build' to build the Docker image from the Dockerfile in the current directory.
+    build: .
+    # Map the container's port 5000 to the host's port 5000.
+    ports:
+      - "5000:5000"
+    # Restart the container automatically if it crashes.
+    restart: always
